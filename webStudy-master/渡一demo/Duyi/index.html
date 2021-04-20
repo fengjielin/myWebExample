@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js练习</title>
+</head>
+<body>
+    <div style="width:100px;height:100px;background:#ccc">
+        <b></b>
+        <strong></strong>
+        <p></p>
+        <i></i>
+    </div>
+
+    <script type="text/javascript">
+        // var date = new Date();
+        // var str =  date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日" + date.getHours() + "时" +  date.getMinutes() + "分" +  date.getSeconds()  + "秒" ;
+        // console.log(str);
+
+        // var div = document.createElement('div');
+        // var p = document.createElement('p');        
+        // document.body.appendChild(div);
+        // div.appendChild(p);
+        // p.innerHTML = "姬成，你最帅！";
+        // div.setAttribute('class','example');
+        // p.setAttribute('class','slogan');
+
+
+
+
+        // var div = document.getElementsByTagName("div")[0];
+        // var text = document.createTextNode('冯杰林');
+        // div.appendChild(text);
+
+
+        // 封装函数，返回元素e的第n层祖先元素
+        // function retparent(elem,n){
+        //     while(elem && n){
+        //         elem = elem.parentElement;
+        //         n --;
+        //     }
+        //     return elem;
+        // }
+        // var i = document.getElementsByTagName("i")[0];
+
+
+            // Element.prototype.myChildren = function(){
+            //     var child = this.childNodes;
+            //     var len = child.length;
+            //     var arr = [];
+            //     for(var i = 0;i < len;i ++){
+            //         if(child[i].nodeType == 1){
+            //             arr.push(child[i]);
+            //             return true;
+            //         }
+            //     }
+            //     return arr;
+            //     return false;                
+            // }
+            // var div = document.getElementsByTagName("div")[0];
+
+        //     点击更改颜色
+        // var div = document.getElementsByTagName("div")[0];
+        // div.style.width = "100px";
+        // div.style.height = "100px";
+        // div.style.backgroundColor = "red";
+        // var count = 0;
+        // div.onclick = function(){
+        //     count ++;
+        //     if(count % 2 == 1){
+        //         this.style.backgroundColor = "pink";
+        //  }else{
+        //     this.style.backgroundColor = "red";
+        //  }
+        // }
+        // 给一个有序数组乱序
+        // var arr = [1,2,3,4,5,6,7,8,9];
+        // arr.sort(function(){
+        //     return Math.random() - 0.5;
+        // });
+
+        // 封装type
+        // function type(target){
+        //     var template = {
+        //         "[object Array]":"array",
+        //         "[object Object]":"object",
+        //         "[object Number]":"Number-Object",
+        //         "[object Boolean]":"Boolean-Object",
+        //         "[object String]":"String-Object"
+        //     }
+        //     if(target === null){
+        //         return "null";
+        //     }else if(typeof(target) == "object"){
+        //         var str = Object.prototype.toString.call(target);
+        //         return template[str];
+        //     }else{
+        //         return typeof (target);
+        //     }
+            
+        //  }
+        // console.log(type(1));
+
+            // function retsibling(e,n){
+            //     while(e && n ){
+            //         if(n > 0){
+            //             if(e.nextElementSibling){
+            //                     e = e.nextElementSibling;
+            //             }else{
+            //                 for(e = e.nextSibling;e && e.nodeType != 1;e = e.nextSibling){}
+            //                 }
+            //             n --;
+            //         }else{
+            //             if(e && e.previousElementSibling){
+            //                      e = e.previousElementSibling;
+            //                 }else{
+            //             for(e = e.previousSibling;e && e.nodeType != 1;e = e.previousSibling){} 
+            //             }
+            //             n ++;
+            //             } 
+            //         }return e;   
+            //     }
+            //     var strong = document.getElementsByTagName('strong')[0];
+                // console.log(retsibling(strong,2)) 
+
+            // 封装兼容性方法，getStyle
+            // var div = document.getElementsByTagName('div')[0];
+            // function getStyle(elem,prop){
+            //     if(window.getComputedStyle){
+            //         return window.getComputedStyle(elem,null)[prop];
+            //     }else{
+            //         return elem.currentStyle[prop];
+            //     }
+            // }
+     
+        </script>
+</body>
+</html>                 

@@ -1,0 +1,47 @@
+.resume {
+    height:110px;
+    position:relative;
+}
+.resume h2 {
+    padding-top: 45px;
+}
+.self{
+    position:absolute;
+    top:110px;
+    right:0;
+    height:824px;
+    background-color:#ccc;
+    display:none;
+    z-index: 10;
+}
+
+.resume .evaluation{
+    margin:0 auto;
+    top:550px;
+    z-index: 10;
+}
+.evaluation ul{
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:6px;
+    list-style: none;
+}
+
+#checkbox{
+    display:none;
+}
+
+#checkbox:checked ~.self{
+    display:block;
+}
+
+#toggle{
+    position:absolute;
+    top:74px;
+    right:18px;
+    font-size:18px;
+    font-weight:100;
+    color:rgba(255,255,255,.7);
+    display:block;
+}
+

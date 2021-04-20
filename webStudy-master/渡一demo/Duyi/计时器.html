@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计时器-三分钟后停止</title>
+    <style type="text/css">
+        input{
+            width:50px;
+            border:1px solid rgba(0,0,0,0.8);
+            font-size:20px;
+            font-weight:bold;
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    Minute:<input type="text" value="0" >
+    Second:<input type="text" value="0" >    
+
+    <script type="text/javascript">
+        var iutm = document.getElementsByTagName('input')[0];
+        var iuts = document.getElementsByTagName('input')[1];        
+        var min = 0,
+            sec = 0;
+        
+        var timer = setInterval(function(){
+            sec ++;
+            if(sec == 60){
+                sec = 0;
+                min ++;
+            }
+            iuts.value = sec;
+            iutm.value = min;
+            if(min == 3){
+                    clearInterval(timer);
+                }
+        },1000);
+        
+    </script>
+</body>
+</html>

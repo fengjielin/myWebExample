@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .container {
+            position: relative;
+            width: 789px;
+            height: 429px;
+            background-color: blue;
+        }
+        #buttons{
+            position:absolute;
+            left:250px;
+            bottom:20px;
+            z-index:2;
+            height:10px;
+            width:100px;
+        }
+        #buttons span{
+            display:inline-block;
+            background:#333;
+            height:10px;
+            width:10px;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 180px;
+            width: 40px;
+            height: 40px;
+            color: #f40;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 39px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #prev {
+            left: 20px;
+        }
+
+        #next {
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+        </div>
+        <a id="prev" href="javascript:;" class="arrow">&lt;</a>
+        <a id="next" href="javascript:;" class="arrow">&gt;</a>
+    </div>
+</body>
+
+</html>

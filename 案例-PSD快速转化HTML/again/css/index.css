@@ -1,0 +1,209 @@
+.index-content{
+    /* background:#4ff; */
+}
+.index-content .index-banner-bg img{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    
+}
+.index-content .index-banner-text{
+    position:absolute;
+    left:50%;
+    top:250px;
+    margin-left:-391px;
+}
+.index-content .index-banner-text .text-logo{
+    width:782px;
+    height:120px;
+    background:url(../img/index-banner-textlogo.png) no-repeat;
+}
+.index-content .index-banner-text .text-info{
+  text-align:center;
+  color:#fff;
+  margin-top:17px;
+}
+.index-content .index-banner-text .text-info .line{
+    display:inline-block;
+    width:40px;
+    border-top:1px solid #fff;
+    vertical-align:middle;
+}
+.index-content .index-banner-text .text-info .txt{
+    margin:0 26px;
+}
+
+.index-content .index-menu{
+    position:relative;
+    border-top:4px solid #f34949;
+}
+.index-content .index-menu .menu-tips{
+    position:absolute;
+    left:50%;
+    top:0;
+    margin-left:-78px;
+    width:156px;
+    height:75px;
+    text-align:center;
+    line-height:65px;
+    color:#fff;
+    background:#f34949;
+}
+.index-content .index-menu .menu-tips:after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:0;
+    width:0;
+    border-left:78px solid transparent;
+    border-right:78px solid transparent;
+    border-bottom:18px solid #fff;
+}
+
+.index-content .index-menu .menu-list{
+    margin-top:150px;
+    color:#555;
+    overflow: hidden;
+}
+.index-content .index-menu .menu-list ul{
+    width:1160px;
+}
+.index-content .index-menu .menu-item{
+    float:left;
+    width:520px;
+    margin-right:60px;
+    margin-bottom:56px;
+}
+.index-content .index-menu .title,.index-content .index-menu .menu-list .line{
+    float:left;
+  
+}
+.index-content .index-menu .menu-list .line{
+    margin-top:10px;
+    width:192px;
+    border-top:1px solid #e3e1e1;
+}
+
+.index-content .index-menu .menu-list .price{
+    float:right;
+}
+.index-content .index-menu .menu-list .title{
+    width:230px;
+    color:#555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.index-menu .menu-item .comment{
+    margin-top:4px;
+    color:#d7d7d7;
+    font-size:12px;
+}
+
+.index-menu .menu-more-btn{
+    margin:0 auto;
+    font-size:14px;
+    color:#b7b7b7;
+    width:132px;
+    height:34px;
+    line-height:34px;
+    padding-left:14px;
+    border:1px solid #d7d5d5;
+}
+.index-menu .menu-more-btn span{
+    margin-left:12px;
+}
+.index-menu .menu-more-btn .icon{
+    display:inline-block;
+    width:12px;
+    height:8px;
+    margin-left: 16px;
+    background:url(../img/index-btn-icon.gif)no-repeat;
+}
+.index-content .index-panel{
+    padding-top:200px;
+}
+.index-panel-header{
+    margin-bottom:75px;
+}
+.index-content .index-panel h3{
+    float:left;
+    font-size:20px;
+    color:#3b3b3b;
+    font-weight:normal;
+}
+.index-content .index-panel .line{
+    float:left;
+    width:200px;
+    margin-top:12px;
+    margin-left:48px;
+    border-top:1px solid #e5e3e3;
+}
+.index-content .index-panel .btn-group{
+    font-size:0;
+    float:right;
+}
+.index-content .index-panel .btn-group .btn{
+    display:inline-block;
+    width:9px;
+    height:9px;
+    margin-left:11px;
+    background:#dedede;
+    border-radius:50%;
+}
+.index-content .index-panel .btn-group .active{
+    background:#9b9b9b;
+}
+
+
+.index-content .index-panel .index-food-list{
+    width:1160px;
+    overflow:hidden;
+}
+.index-content .index-panel .index-food-list .foot-item{
+    float:left;
+    margin-right:60px;
+}
+.index-content .index-panel .index-food-list .foot-item .banner{
+    height:202px;
+    margin-bottom:30px;
+}
+.index-content .index-panel .index-food-list .foot-item .name{
+    color:#555;
+    margin-bottom:12px;
+}
+.index-content .index-panel .index-food-list .foot-item .star-bar{
+    font-size:0;
+}
+.index-content .index-panel .index-food-list .foot-item .star-bar .star{
+    display:inline-block;
+    width:12px;
+    height:13px;
+    margin-right:5px;
+    background:url("../img/index-star.png") no-repeat;
+}
+.index-content .index-panel .index-food-list .foot-item .star-bar .nostar{
+    background-position:0 -12px;
+}
+
+
+
+.index-pics{
+    height:380px;
+    overflow:hidden;
+}
+.index-pics .pic-col{
+    float:left;
+}
+.index-pics .pic-col-m{
+    width:325px;
+}
+.index-pics .pic-col-s{
+    width:287px;
+    
+}
+.index-pics .pic-col-l{
+    width:460px;
+    
+}

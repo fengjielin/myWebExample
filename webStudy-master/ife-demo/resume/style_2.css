@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    padding:0 120px;
+}
+.wrapper{
+    width:100%;
+    height:500px;
+}
+h2{
+    float:left;
+    margin:0;
+    padding-top:45px;
+    width:200px;
+    height:635px;
+    font-size:36px; 
+    color:#fff;   
+    background:#65a5fa;
+    text-align:center;
+    
+}
+.wrapper .mesage{
+    padding-left:220px;
+}
+
+.wrapper .info{
+    display:block;
+    padding:20px 0;
+    font-size:22px;
+    font-weight:bold;
+}
+.wrapper .mesage .msg{
+    font-weight:bold;
+}
+.wrapper .deta .group .msg{
+    padding-bottom:5px;
+}

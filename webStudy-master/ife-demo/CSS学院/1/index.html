@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+        }
+
+        .a {
+            padding-top: 50px;
+            padding-bottom: 10px;
+            font-size: 36px;
+            transition: color 1s;
+        }
+
+        .b {
+            margin-top: 20px;
+            font-size: 26px;
+        }
+
+        .line {
+            height: 2px;
+            width: 0px;
+            margin: 0 auto;
+            background: #0f9;
+            transition: width 1s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">前端学院</div>
+        <div class="line"></div>
+        <button class="b">切换样式</button>
+    </div>
+    <script>
+        var a = document.getElementsByClassName('a')[0];
+        var btn = document.getElementsByClassName('b')[0];
+        var line = document.getElementsByClassName('line')[0];
+        var key = true;
+        btn.onclick = function () {
+            if (key) {
+                line.style.width = '150px';
+                a.style.color = "#0f9";
+                key = false;
+            }else{
+                line.style.width = '0px';
+                a.style.color = "#000";                
+                key = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

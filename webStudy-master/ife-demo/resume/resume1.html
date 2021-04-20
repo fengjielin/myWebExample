@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三种简历</title>
+    <link rel="stylesheet" href="style_1.css">
+    <!-- <link rel="stylesheet" href="style_2.css"> -->
+    <!-- <link rel="stylesheet" href="style_3.css"> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>简历</h2>
+        <div class="mesage ">
+            <div class="deta clear-left">
+                <p class="info">基本信息</p>
+                <div class="msg-block">
+                    <span class="msg">姓名</span>&nbsp;
+                    <span>张三&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="msg">性别</span>&nbsp;
+                    <span>男&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="msg">应聘职位</span>&nbsp;
+                    <span>Wed前端工程师</span>
+                    <span id="hello" class="hello">Hello!!!</span>
+                    <span id="greet"></span>
+                </div>
+
+
+            </div>
+
+            <div class="deta clear-left">
+                <p class="info">联系方式</p>
+                <div class="msg-block">
+                    <span class="msg">手机</span>&nbsp;
+                    <span>12312341234&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="msg">Email</span>&nbsp;
+                    <span>
+                        <a href="#">hoinefe@baidu.com</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="msg">个人主页</span>&nbsp;
+                        <span>
+                            <a href="#">Github</a>
+                        </span>
+                </div>
+            </div>
+            <div class="deta clear-left">
+                <p class="info">能力描述</p>
+                <div class="msg-block group">
+                    <p class="msg"> 技术能力</p>
+                    <p>熟练掌握HTML，CSS，Javascript</p>
+                    <p class="msg"> 综合能力</p>
+                    <p>良好的沟通，主动积极，努力勤奋</p>
+                </div>
+
+            </div>
+            <div class="deta clear-left">
+                <p class="info">教育经历</p>
+                <div class="msg-block group">
+                    <p class="msg"> 本科</p>
+                    <p>百度前端技术学院小薇学院</p>
+                    <p class="msg"> 研究生</p>
+                    <p>百度前端技术学院大斌学院</p>
+                </div>
+            </div>
+            <div class="deta clear-left">
+                <p class="info">项目经历</p>
+                <div class="msg-block group">
+                    <p class="msg"> 小度小度</p>
+                    <p>作为前端工程师角色参与ABC组件的开发</p>
+                    <p class="msg"> SAN Doc</p>
+                    <p>作为文档工程师参与SAN Doc编写</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var hello = document.getElementById('hello');
+        var greet = document.getElementById('greet');
+        var key = true;
+        hello.onclick = function(){
+            if(key){
+                greet.innerHTML =  "你好！非常高兴您看到我的简历。";
+                key = false;
+            }else{
+                greet.innerHTML =  "";
+                key = true;
+            }
+        }
+    </script>
+</body>
+
+</html>

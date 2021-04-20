@@ -1,0 +1,672 @@
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+/* 布局——两个两栏 */
+/* 第一个 */
+.wrapper-flex{ 
+    height:100vh;
+    display:flex;
+    align-items:flex-start;
+}
+.wrapper-flex .menu{
+    flex: 0 0 auto;
+    width:350px;
+    background:#1d2531; 
+    overflow:hidden;         
+}
+.wrapper-flex .chat{
+    flex: 1 1 auto;
+}
+/* 第二个 */
+.wrapper .menu{
+    height:100vh;    
+    overflow:auto;
+}
+.wrapper .menu .primary-menu{
+    float:left;
+    width:100px;
+    height:100%;
+}
+.wrapper .menu .secondary-menu{
+    overflow:auto;
+    background:#222c3c;    
+    height:100%;
+}
+
+
+/* 最右侧主要菜单 */
+.wrapper .menu .primary-menu .primary .item{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin: 20px auto 0;;
+    position:relative;
+    cursor:pointer;    
+}
+.wrapper .menu .primary-menu .primary .item a{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.wrapper .menu .primary-menu .primary .item1{
+    background-image:linear-gradient(to top,#1a92ec,#2da1f7);  
+}
+.wrapper .menu .primary-menu .primary .item2{
+    background-image:linear-gradient(to top,#805de6,#9c8ee3); 
+}
+.wrapper .menu .primary-menu .primary .item3{
+    background-image:linear-gradient(to top,#cc290c,#ea5238); 
+}
+.wrapper .menu .primary-menu .primary .item4{
+    border:3px solid #2d3848;
+}
+
+.wrapper .menu .primary-menu .primary .item1 .icon{
+    width:26px;
+    height:26px;  
+    background:url('../img/item.png') -15px -17px no-repeat;
+}
+.wrapper .menu .primary-menu .primary .item2 .icon{
+    width:26px;
+    height:35px;
+    background:url('../img/item.png') -18px -94px no-repeat;
+}
+.wrapper .menu .primary-menu .primary .item3 .icon{
+    width:33px;
+    height:26px;
+    background:url('../img/item.png') -15px -178px no-repeat;
+}
+.wrapper .menu .primary-menu .primary .item4 .icon{
+    width:20px;
+    height:20px;
+    background:url('../img/plus-icon.png');
+}
+
+.wrapper .menu .primary-menu .setting .item{
+    float:left;
+    width:20px;
+    height:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+    cursor:pointer;
+} 
+.wrapper .menu .primary-menu .setting .item1 {
+    background:url('../img/bottom-actions.png') 0px 0px no-repeat;
+} 
+.wrapper .menu .primary-menu .setting .item2 {
+    background:url('../img/bottom-actions.png') -20px 0px no-repeat;
+} 
+
+.wrapper .menu .primary-menu .primary{
+    position:fixed; 
+    margin-left:20px;
+}
+.wrapper .menu .primary-menu .setting{
+    position:fixed; 
+    bottom:12px;
+}
+
+/* 第二栏菜单 */
+.wrapper .menu .secondary-menu{
+    padding-left:28px;
+    padding-right:28px;
+}
+.wrapper .menu .secondary-menu dl:nth-child(2){
+    border-top:1px solid #4e5a6b;
+    border-bottom:1px solid #4e5a6b;
+
+}
+.wrapper .menu .secondary-menu dd,
+.wrapper .menu .secondary-menu dt .icon{
+    cursor:pointer;
+}
+.wrapper .menu .secondary-menu dt{
+    color:#4e5a6b;
+    padding-top:25px;
+    padding-bottom:25px;
+    font-size:12px;
+}
+.wrapper .menu .secondary-menu dd{
+    margin-bottom:15px;
+    color:#b7c0cd;
+    font-size:12px;
+}
+
+.wrapper .menu .secondary-menu dt .icon{
+    float: right;
+    width:20px;
+    height:20px;
+    background:url('../img/bottom-actions.png') -20px 0px no-repeat;
+}
+
+.wrapper .menu .secondary-menu dd .icon,
+.wrapper .menu .secondary-menu dd .notice{
+    text-align:center;
+    line-height:22px;  
+    color:#fff;
+    font-weight:bold;
+}
+.wrapper .menu .secondary-menu dd .icon{
+    float: right;
+    width:33px;
+    height:22px;
+    border-radius:15px;
+    background:linear-gradient(to top,#1b92ec,#2ca0f7);
+  
+}
+.wrapper .menu .secondary-menu dd .notice{
+    width:22px;
+    height:22px;
+    border-radius:50%;    
+    background:linear-gradient(to top,#cd2a0d,#f25236); 
+}
+
+
+.wrapper .menu .secondary-menu dd .pic{
+    float:left;
+    width:18px;
+    height:16px;
+    margin-right:10px;
+}
+.wrapper .menu .secondary-menu dd .pic1{
+    background:url('../img/icons.png') 0px 0px no-repeat; 
+}
+.wrapper .menu .secondary-menu dd .pic2{
+    background:url('../img/icons.png') 0px -20px no-repeat; 
+}
+.wrapper .menu .secondary-menu dd .pic3{
+    background:url('../img/icons.png') 0px -36px no-repeat; 
+}
+.wrapper .menu .secondary-menu dd .pic4{
+    background:url('../img/icons.png') 0px -56px no-repeat; 
+}
+
+.wrapper .menu .secondary-menu .monthly{
+    height:50px;
+    position:fixed;
+    bottom:4px;
+}
+.wrapper .menu .secondary-menu .monthly .monthly-goals .text{
+    float:left;
+    display:block;
+    font-size:14px;
+    color:#fff;
+}
+.wrapper .menu .secondary-menu .monthly .monthly-goals .text2{
+    float:right;
+}
+
+.wrapper .menu .secondary-menu .monthly .monthly-goals  .progress-bar{
+    position:relative;
+    top:36px;
+    left:0px;
+    width:192px;
+    height:4px;
+    background:#2d3848;
+}
+.wrapper .menu .secondary-menu .monthly .monthly-goals  .progress-bar .bar{
+    width:40px;
+    height:4px;
+    background-image:linear-gradient(to right, #7f5ce6, #9c8ee3);
+}
+/* 菜单结束 */
+/* char部分开始 */
+/* 布局 */
+.wrapper .chat .top-bar{
+    height:79px;
+    width:100%;
+    background:#fff;
+}
+.wrapper .chat .messages{
+    display:flex;
+    align-items:flex-start;
+    margin-top: 80px;
+} 
+.wrapper .chat .messages .contacts{
+    flex:0 0 auto;
+    width:399px;
+    height:calc(100vh - 80px);
+    background:#fff;
+}
+.wrapper .chat .messages .contents{
+    flex:1 1 auto;
+    height:calc(100vh - 80px);
+    background:#fff;
+}
+/* 顶部 */
+.wrapper .chat .top-bar{
+    border-bottom:1px solid #e6e9ec;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.wrapper .chat .top-bar h3{
+    font-size:24px;
+    color:#354052;
+    line-height:80px;
+    margin-left:32px;
+}
+.wrapper .chat .top-bar .admin{
+    width:278px;
+    height:50px;
+    position:fixed;
+    top:0;
+    right:28px;
+    padding-top:15px;
+    padding-bottom:15px;
+    overflow:hidden;
+}
+.wrapper .chat .top-bar .admin::after{
+    content: url('../img/drop.png');
+    width:11px;
+    height:7px;
+    position:absolute;
+    right:0px;
+    top:28px;
+    cursor: pointer;    
+}
+.wrapper .chat .top-bar .admin .photo{
+    float:left;
+    width:52px;
+    height:50px;
+    background:url('../img/jordan-j.png');
+    border-radius:50%;
+    margin-right:16px;
+    cursor: pointer;
+}
+.wrapper .chat .top-bar .admin .photo .circle{
+    width:22px;
+    height:22px;
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 0 5px rgb(255,255,255);
+    position:relative;
+    bottom:-28px;
+    right:-28px;
+}
+.wrapper .chat .top-bar .admin .photo .circle .icon{
+    width:14px;
+    height:14px;
+    background:url('../img/circle.png') no-repeat;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.wrapper .chat .top-bar .admin .text h4{
+    font-size:16px;    
+    color:#2399f1;
+    line-height:2em;
+}
+.wrapper .chat .top-bar .admin .text span{
+    font-size:14px;
+    color:#b5b5b5;
+}
+
+/* 内容左部分 */
+.wrapper .chat .messages .contacts{
+    position:relative;
+    border-right:1px solid #e6e9ec;
+}
+.wrapper .chat .messages .contacts input{
+    width:340px;
+    height:36px;
+    margin:17px 30px;
+    border-radius:6px;
+    text-indent:2em;
+    color:#e3e6ea;
+    font-size:14px;
+    border:1px solid #e3e6ea;
+}
+.wrapper .chat .messages .contacts  .search-pic{
+    width:16px;
+    height:16px;
+    background:url('../img/search-icon.png') no-repeat;
+    position:absolute;
+    top:28px;
+    right:44px;
+    cursor:pointer;
+}
+
+.wrapper .chat .messages .contacts .items{
+    border-right: 1px solid #e6e9ec; 
+    width:373px;
+    height:113px;
+    padding-left:27px;
+    padding-top:16px;
+    background:#fff;
+    border-top:1px solid #e6e9ec;
+}
+.wrapper .chat .messages .contacts .items .top{
+    position:relative;
+    overflow:hidden;
+}
+.wrapper .chat .messages .contacts .items .top .photo,
+.wrapper .chat .messages .contents .contacts-col .pic{
+    float:left;
+    width:52px;
+    height:48px;
+    margin-right:20px;
+    border-radius:50%;
+}
+
+
+.wrapper .chat .messages .contacts .items .top .photo1{
+    background:url('../img/face-1.png');    
+}
+.wrapper .chat .messages .contacts .items .top .photo2{
+    background:url('../img/face-2.png');    
+}
+.wrapper .chat .messages .contacts .items .top .photo3{
+    background:url('../img/face-3.png');    
+}
+.wrapper .chat .messages .contacts .items .top .photo4{
+    background:url('../img/face-4.png');    
+}
+.wrapper .chat .messages .contacts .items .top .photo5{
+    background:url('../img/face-5.png');    
+}
+.wrapper .chat .messages .contacts .items .top .photo6{
+    background:url('../img/face-6.png');    
+}
+.wrapper .chat .messages .contacts .items .top .photo7{
+    background:url('../img/face-7.png');    
+}
+
+
+
+.wrapper .chat .messages .contacts .items .top .text h4{
+    font-size:16px;
+    color:#585d68;
+}
+.wrapper .chat .messages .contacts .items .top .text1 h4{
+    color:#2399f1;
+}
+.wrapper .chat .messages .contacts .items .top .text span{
+    font-size:14px;
+    color:#b5b5b5;
+}
+.wrapper .chat .messages .contacts .items .top  .text .timer{
+    font-size:14px;
+    color:#7f8fa4;
+    position:absolute;
+    top:22px;
+    right:28px;
+}
+.wrapper .chat .messages .contacts .items .abstract{
+    font-size:14px;
+    color:#585d68;
+    margin-top:16px;
+    padding-right:64px;
+    position:relative;
+}
+.wrapper .chat .messages .contacts .items .abstract .num{
+    width:28px;
+    height:28px;
+    background-image:linear-gradient(to top,#1e93eb,#45abf9);
+    border-radius:50%;
+    position:absolute;
+    top:0px;
+    right:20px;
+    text-align:center;
+    line-height:28px;
+    font-size:14px;
+    color:#fff;
+}
+
+/* 右边内容区域 */
+
+.wrapper .chat .messages .contents .contents-top{
+    padding-left:30px;    
+    height:72px;
+    position:relative;
+    border-bottom:1px solid #e6e9ec;
+}
+.wrapper .chat .messages .contents .contents-top h3{   
+    font-size:18px;
+    color:#585d68;
+    line-height:72px;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r{
+    width:286px;
+    height:33px;
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools{
+    width:110px;
+    height:33px;
+    border-radius:5px;
+    background-image:linear-gradient(to top,#f3f4f8,#fefefe);
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools .tool{
+    float:left;
+    width:36px;
+    height:33px;
+    position:relative;
+    cursor:pointer;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools .tool2{
+    border-left:1px solid #ced0da;
+    border-right:1px solid #ced0da;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools .tool .icon{
+    width:16px;
+    height:18px;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);    
+
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools .tool1 .icon{
+    background:url(../img/tools.png) 0px 0px no-repeat;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools .tool2 .icon{
+    background:url(../img/tools.png) 0px -18px no-repeat;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .tools .tool3 .icon{
+    background:url(../img/tools.png) 0px -38px no-repeat;
+}
+
+.wrapper .chat .messages .contents .contents-top .contents-top-r .page{
+    position:absolute;
+    right:80px;
+    top:50%;
+    transform:translateY(-50%);
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .selec-page{
+    width:75px;
+    height:33px;
+    background-image:linear-gradient(to top,#f3f4f8,#fefefe);
+    position:absolute;
+    right:1px;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:5px;  
+    cursor:pointer;    
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .selec-page .selection{
+    float:left;
+    width:37px;
+    height:33px;  
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .selec-page .selection .icon{
+    width:6px;
+    height:10px;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);    
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .selec-page .left{
+    border-right:1px solid #ced0da;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .selec-page .left .icon{
+    background:url('../img/arrows.png') 0px 0px no-repeat;
+}
+.wrapper .chat .messages .contents .contents-top .contents-top-r .selec-page .right .icon{
+    background:url('../img/arrows.png') -8px 0px no-repeat;
+}
+
+
+.wrapper .chat .messages .contents .contents-top .contents-top-r .page{
+    width:78px;
+    height:33px;
+    text-align:center;
+    line-height:33px;
+    border-left:1px solid #ced0da;
+}
+
+.wrapper .chat .messages .contents .contacts-col{
+    padding:26px 56px 28px 30px;
+}
+
+.wrapper .chat .messages .contents .contacts-col .text{
+    overflow:hidden;
+}
+.wrapper .chat .messages .contents .contacts-col .text h4{
+    font-size:16px;
+    color:#000;
+    line-height:1.5em;
+}
+.wrapper .chat .messages .contents .contacts-col .text h4 span{
+    color:#7f8fa4;
+    margin-left:10px;
+}
+.wrapper .chat .messages .contents .contacts-col .text p{
+    font-size:14px;
+    color:#909399;
+    line-height:1.5em;
+}
+
+.wrapper .chat .messages .contents .timer{
+    font-size:14px;
+    text-align:center;
+    color:#7f8fa4;
+}
+.wrapper .chat .messages .contents .new{
+    color:#86bff6;
+}
+.wrapper .chat .messages .contents .timer::before,
+.wrapper .chat .messages .contents .timer::after{
+    content:"";
+    display:block;
+    margin-top:8px;
+    background:#ced0da;
+    width:40%;
+    height:1px;
+}
+.wrapper .chat .messages .contents .timer::before{
+    float:left;
+}
+.wrapper .chat .messages .contents .timer::after{
+    float:right;
+}
+
+.wrapper .chat .messages .contents .contacts-1-1 .pic1{
+    background:url('../img/face-1.png');        
+}
+.wrapper .chat .messages .contents .contacts-1-2 .pic2{
+    background:url('../img/jordan-j.png');        
+}
+
+.wrapper .chat .messages .contents .contacts-col .picture{
+    margin-left:70px;
+    margin-top:20px;
+}
+.wrapper .chat .messages .contents .contacts-col .photo{
+    float:left;
+}
+.wrapper .chat .messages .contents .contacts-col .photo .pic,
+.wrapper .chat .messages .contents .contacts-col .photo2 .share{
+    width:156px;
+    height:100px;
+    border-radius:6px;    
+}
+
+.wrapper .chat .messages .contents .contacts-col .photo1 .pic{
+    background:url(../img/photo-1.png);
+}
+.wrapper .chat .messages .contents .contacts-col .photo2 .pic{
+    background:url(../img/photo-2.png);
+}
+
+.wrapper .chat .messages .contents .contacts-col .photo2 .share{
+    background:rgba(0,0,0,.3);
+    position:relative;
+    z-index:1;
+}
+.wrapper .chat .messages .contents .contacts-col .photo2 .share .round,
+.wrapper .chat .messages .contents .contacts-col .photo2 .share .round .open{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.wrapper .chat .messages .contents .contacts-col .photo2 .share .round{
+    width:52px;
+    height:52px;
+    background:rgba(255,255,255,.3);
+    border-radius:50%;
+   cursor:pointer;
+}
+.wrapper .chat .messages .contents .contacts-col .photo2 .share .round .open{
+    width:16px;
+    height:16px;
+    background:url('../img/open-icon.png');
+}
+.wrapper .chat .messages .contents .add{
+    position:relative;
+}
+.wrapper .chat .messages .contents .add input{
+    width:90%;
+    height:54px;
+    margin-left:30px;
+    margin-bottom:20px;
+    font-size:14px;
+    border:1px solid #e3e6ea;
+    text-indent:6em;
+}
+.wrapper .chat .messages .contents .add .add-cont{
+    width:54px;
+    height:54px;
+    border:1px solid #ced0da;
+    background-image:linear-gradient(to top,#f2f4f7,#fefeff);
+    position:absolute;
+    top:0;
+    left:30px;
+    z-index:1;
+}
+.wrapper .chat .messages .contents .add .add-cont .add-icon{
+    width:14px;
+    height:14px;
+    background:url('../img/add-icon.png');
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor:pointer;
+}
+
+
+/* 设置chat区域滚动tiao */
+.wrapper .chat .messages .contacts,
+.wrapper .chat .messages .contents{
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.wrapper .chat .messages .contacts::-webkit-scrollbar,
+.wrapper .chat .messages .contents::-webkit-scrollbar{
+    width:1px;
+}
