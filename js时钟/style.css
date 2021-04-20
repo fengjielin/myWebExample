@@ -1,0 +1,15 @@
+body{
+				background-color: black;
+			}
+			#timetxt{
+				text-align: center;
+				width: 20%;
+				height: 20%;
+				color:aqua;
+				font-size: 48px;
+				margin: auto;
+				position:absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;

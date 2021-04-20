@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+}
+.shareMask{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:#7B7B7B;
+    opacity:0.3;
+    display:none;
+    z-index:-1;
+}
+.wrapper{
+    width:700px;
+    height:600px;
+    margin:20px auto;
+    border:1px solid black;
+}
+.wrapper h3{
+    text-align:center;
+    font-size:30px;
+    font-weight:600;
+    color:#6C6C6C;
+}
+.wrapper .demo{
+    width:600px;
+    height:320px;
+    border-top:3px dashed #cecece;
+    margin:20px auto;
+}
+.wrapper .demo .share{
+    display:block;
+    width:100px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    margin:10px auto;
+    padding:10px;
+    font-size:16px;
+    border:1px dashed #cfcfcf;
+}
+.wrapper .demo .box{
+    width:380px;
+    height:180px;
+    background-color:#fff;
+    margin:0 auto;
+    padding:20px;
+    border-radius:10px;
+    display:none;
+    z-index:10;
+}
+.wrapper .demo .box .sharebox-top{
+    width:380px;
+    height:30px;
+    padding-bottom:10px;
+    border-bottom:2px solid #ccc;
+}
+.wrapper .demo .box .sharebox-top span{
+    font-size:16px;
+    font-weight:600;
+    color:#84c017;
+    text-indent:0.5em;
+}
+.wrapper .demo .box .sharebox-top .close{
+    display:block;
+    width:30px;
+    height:30px;
+    background:url('img/closeBtn.png') 0px 0px no-repeat;
+    float:right;
+}
+.wrapper .demo .box .sharebox-top .close:hover{
+    background:url('img/closeBtn.png') 0px -31px no-repeat;    
+}
+.wrapper .demo .box .sharebox-content{
+    width:300px;
+    height:120px;
+    padding-top:20px;
+    margin:0 auto;
+}
+.wrapper .demo .box .sharebox-content ul li{
+    float:left;    
+    width:50px;
+    height:50px;
+    position:relative;
+}
+.wrapper .demo .box .sharebox-content ul li:hover a{
+    margin-top:2px;    
+}
+.wrapper .demo .box .sharebox-content ul li:hover span{
+    opacity:0.2;
+}
+.wrapper .demo .box .sharebox-content ul li a{
+    display:block;
+    width:28px;
+    height:28px;
+    margin-left:11px;
+    margin-top:12px;
+    transition:all 0.3s ease-in-out; 
+}
+.wrapper .demo .box .sharebox-content ul li span{
+    position:absolute;
+    left:5px;
+    bottom:0px;
+    display:block;
+    width:40px;
+    height:10px;
+    background:url('img/share_shade.png') 0px 0px no-repeat;  
+    transition:all 0.3s ease-in-out;               
+}
+.wrapper .demo .box .sharebox-content .sharebox1{
+    background:url('img/sharePic.png') 0px 0px no-repeat;        
+}
+.wrapper .demo .box .sharebox-content .sharebox2{
+    background:url('img/sharePic.png') -28px 0px no-repeat;        
+}
+.wrapper .demo .box .sharebox-content .sharebox3{
+    background:url('img/sharePic.png') -56px 0px no-repeat;        
+}
+.wrapper .demo .box .sharebox-content .sharebox4{
+    background: url('img/weixin.png') -2px -2px no-repeat;
+}
+.wrapper .demo .box .sharebox-content .sharebox5{
+    background:url('img/sharePic.png') -112px 0px no-repeat;        
+}
+.wrapper .demo .box .sharebox-content .sharebox6{    
+    background: url('img/gitPic.png') 0px 0px no-repeat;
+}

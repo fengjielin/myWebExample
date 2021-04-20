@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 */
+/* 1.使用float */
+.clearfix{
+    zoom:1;
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+layout1{
+    width:100%;
+}
+.float-left{
+    float:left;
+    width:30%;
+    height:50px;
+    background-color:#ff4;
+}
+.float-right{
+    float:right;
+    width:70%;
+    height:50px;
+    background-color:#0ff; 
+}
+
+/* 2.使用position */
+.layout-1-P{
+    position:relative;
+}
+.posi-left{
+    position:absolute;
+    left:0;
+    width:30%;
+    height:50px;
+    background-color:#ff4;
+}
+.posi-right{
+    position:absolute;
+    right:0;
+    width:70%;
+    height:50px;
+    background-color:#0ff; 
+}
+
+
+/* 2.使用flexbox */
+.layout-1-fx{
+    display:flex;
+}
+.flex-left{
+    width:30%;
+    height:50px;
+    background-color:#ff4;
+}
+.flex-right{
+    width:70%;
+    height:50px;
+    background-color:#0ff; 
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>获取时间</title>
+</head>
+
+<body>
+    <P></P>
+    <P></P>
+
+    <script>
+        var p = document.querySelectorAll('p');
+        
+
+        getMyCNTimer("CN");
+        getMyENTimer("EN");
+        function getMyCNTimer(de) {
+            p[0].innerHTML = getMyDate(de) + getWeeks(de) + getMyTime(de);
+            timer = setInterval(function () {
+                p[0].innerHTML = getMyDate(de) + getWeeks(de) + getMyTime(de);
+            }, 1000);
+        }
+
+        function getMyENTimer(de) {
+            p[1].innerHTML = getMyDate(de) + getWeeks(de) + getMyTime(de);
+            timer = setInterval(function () {
+                p[1].innerHTML = getMyDate(de) + getWeeks(de) + getMyTime(de);
+            }, 1000);
+        }
+
+
+        function getMyDate(n) {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var day = date.getDate();
+            month = checkTime(month);
+            day = checkTime(day);
+            if (n == 'CN') {
+                var myDate = year + '年' + month + '月' + day + '日';
+            } else if (n == 'EN') {
+                var myDate = year + '-' + month + '-' + day + ' ';
+            }
+            return myDate;
+        }
+
+        function getMyTime(n) {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            hours = checkTime(hours);
+            minutes = checkTime(minutes);
+            seconds = checkTime(seconds);
+          if(n == "CN"){
+            var myTime = hours + '年' + minutes + '月' + seconds + '日';
+          }else if(n == "EN"){
+              var k;
+              if(hours <= 12){
+                  k = " AM";
+              }else {
+                  k = " PM";
+              }
+            var myTime = hours + ':' + minutes + ':' + seconds + k;                      
+          }           
+            return myTime;
+        }
+
+        function getWeeks(n) {
+            var date = new Date();
+            if (n == 'CN') {
+                switch (date.getDay()) {
+                    case 0: return ' 星期日 ';
+                        break;
+                    case 1: return ' 星期一 ';
+                        break;
+                    case 2: return ' 星期二 ';
+                        break;
+                    case 3: return ' 星期三 ';
+                        break;
+                    case 4: return ' 星期四 ';
+                        break;
+                    case 5: return ' 星期五 ';
+                        break;
+                    case 6: return ' 星期六 ';
+                        break;
+                }
+            } else if (n == 'EN') {
+                switch (date.getDay()) {
+                    case 0: return ' Sunday ';
+                        break;
+                    case 1: return ' Monday ';
+                        break;
+                    case 2: return ' Tuesday ';
+                        break;
+                    case 3: return ' Wednesday ';
+                        break;
+                    case 4: return ' Thursday ';
+                        break;
+                    case 5: return ' Friday ';
+                        break;
+                    case 6: return ' Saturday ';
+                        break;
+                }
+            }
+
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = '0' + i;
+            }
+            return i;
+        }
+    </script>
+</body>
+
+</html>

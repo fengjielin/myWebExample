@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width:100px;height:100px;background:#ccc;position:absolute;left:0;top:0;">
+        <!-- <div style="width:50px;height:50px;background:#f40;"></div> -->
+    </div>
+    <!-- <a href="https://www.baidu.com">www.baidu.com</a> -->
+
+    <script type="text/javascript">
+        function drag(elem) {
+            // var div = document.getElementsByTagName('div')[0];
+            var disX,
+                disY;
+            // div.onmousedown = function (e) {
+            //     disX = e.pageX - parseInt(div.style.left);
+            //     disY = e.pageY - parseInt(div.style.top);
+            //     document.onmousemove = function (e) {
+            //         var event = e || window.event;
+            //         console.log(e.pageX + " " + e.pageY);
+            //         div.style.left = e.pageX - disX + "px";
+            //         div.style.top = e.pageY - disY + "px";
+            //     }
+            //     document.onmouseup = function () {
+            //         document.onmousemove = null;
+            //     }
+            // }
+    
+
+
+
+
+
+
+
+
+
+
+
+        // document.onclick = function () {
+        //     console.log("闲");
+        // }
+
+        // var div = document.getElementsByTagName('div');
+        // var a = document.getElementsByTagName('a')[a];        
+        // var len = div.length;
+        // for (var i = 0; i < len; i++) {
+        //     addEvent(div[i], 'click', function (e) {
+        //         console.log('a');
+        //         stopBubble(event)
+        //     })
+        // }
+
+        // 封装兼容性方法：addEvent(elem,type,handle);
+        // function addEvent(elem, type, handle) {
+        //     if (elem.addEventListener) {
+        //         elem.addEventListener(type, handle, false);
+        //     } else if (elem.attachEvent) {
+        //         elem.attachEvent('on' + type, function () {
+        //             handle.call(elem);
+        //         })
+        //     } else {
+        //         elem['on' + type] = handle;
+        //     }
+        // }
+        // 封装兼容性方法：removeEvent(elem,type,handle);
+        // function removeEvent(elem, type, handle) {
+        //     if (elem.removeEventListener) {
+        //         elem.removeEventListener(type, handle, false);
+        //     } else if (elem.detachEvent) {
+        //         elem.detachEvent('on' + type, function () {
+        //             handle.call(elem);
+        //         })
+        //     } else {
+        //         elem['on' + type] = null;
+        //     }
+        // }
+        // 封装取消冒泡的函数：stopBubble(event);
+        // function stopBubble(event) {
+        //     if (event.stopPropagation) {
+        //         event.stopPropagation();
+        //     } else {
+        //         event.cancelBubble = true;
+        //     }
+        // }
+
+        // 阻止右键菜单
+        // document.oncontextmenu = function(e){
+        //     console.log('a');
+        //     cancelHandler(e);
+        // }
+
+        // 封装阻止默认事件的函数：cancelHandler(event);
+        // function cancelHandler(event) {
+        //     if (event.preventDefault) {
+        //         event.preventDefault();
+        //     } else {
+        //         event.returnValue = false;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

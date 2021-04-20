@@ -1,0 +1,17 @@
+
+.direction{
+	height:50px;
+	opacity:0.2;
+}
+.direction .left{
+	position:absolute;
+	width:100px;
+	height:100px;
+	background-color:#f40;
+	
+}
+.direction .right{
+	height:100px;
+	background-color:#0ff;
+	margin-left:100px;
+}

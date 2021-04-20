@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>H5拼图</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: 10px auto;
+            border: 1px solid black;
+        }
+        #title{
+           text-align: center;
+        }
+        #slider form,
+        #input form{
+            margin-left: 146px;
+        }
+        #main{
+            margin: 10px;
+        }
+        #source{
+            vertical-align:middle;
+        }
+        .imgBack{
+            margin: 10px auto;
+            width: 120px;
+            height: 120px;
+        }
+       
+        /* 图片展示选择栏 */
+        #imgShow{
+            width: 800px;
+            margin: 10px auto;
+            right: -130px;
+        }
+
+        #imgShow ul{
+            list-style: none;
+        }
+        #imgShow ul li{
+            float: left;
+        }
+        #imgShow img{
+            width: 120px;
+            height: 120px;
+       }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div id="title">
+            <h2>拼图游戏</h2>
+        </div>
+        <div id="slider">
+            <form action="">
+                <label for="">容易</label>
+                <input type="range" id="scale" value="4" min="3" max="5" step="1">
+                <label for="">困难</label>
+            </form>
+            <div class="imgBack">
+                <img id="source" height="120px" width="120px" src="img/timg.jpg" alt="请输入图片地址！！">
+            </div>
+            <br />
+        </div>
+        <div id="input">
+            <form action="">
+                <input type="text" id="imgSrc">
+                <input type="button" value="提交" id="inputBut">
+            </form>
+        </div>
+        <!-- 主体 -->
+        <div id="main" class="main">
+            <canvas id="puzzle" width="480px" height="480px"></canvas>
+        </div>
+
+
+    </div>
+    <div id="imgShow">
+        <ul id="ul">
+            <li class="li">
+                <img src="img/1.jpg" alt="">
+            </li>
+            <li class="li">
+                <img src="img/2.jpg" alt="">
+            </li>
+            <li class="li">
+                <img src="img/3.jpg" alt="">
+            </li>
+            <li class="li">
+                <img src="img/4.jpg" alt="">
+            </li>
+            <li class="li">
+                <img src="img/5.jpg" alt="">
+            </li>
+            <li class="li">
+                <img src="img/6.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+	<p>注意:随机的图片可能是无法拼会回</p>
+	\\可以使用逆序数,判断是否为偶数
+    <script src="sliding.js"></script>
+</body>
+
+</html>

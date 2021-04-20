@@ -1,0 +1,556 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.shade{
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.4);
+}
+.banner {
+    width: 100%;
+    height: 990px;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner .banner-top-text {
+    width: 796px;
+    padding: 0 200px;
+    text-align: center;
+    color: #fff;   
+    position: relative; 
+}
+
+.banner .banner-top-text h2 {
+    padding-top: 85px;
+    margin-bottom: 50px;
+    font-size: 62px;
+    font-weight:normal;
+    color: #fff;
+}
+
+.banner .banner-top-text p {
+    font-size: 20px;
+    line-height:1.5em;
+    color:#c7c2bc;
+}
+
+.banner .banner-top-text .sicn-up {
+    position:relative;
+    left:-80px;
+    margin-top: 100px;
+    width:800px;
+    height:250px;
+    border: 1px solid rgba(255,255,255,.4);
+    padding: 60px 100px 0;
+}
+.banner .banner-top-text .sicn-up p{
+    font-size:16px;
+    color:#fff;
+}
+.banner .banner-top-text .sicn-up span{
+    padding-bottom:50px;
+    color:#c7c2bc;     
+}
+.banner .banner-top-text .sicn-up .sicn-input input{
+    height:54px;
+    margin-top:50px;    
+    margin-left:22px;
+}
+.banner .banner-top-text .sicn-up .sicn-input .input-text{
+    width:290px;    
+    background-color:transparent;
+    border:1px solid rgba(255,255,255,.4);
+    font-size:14px;
+    color:#fff;
+    text-indent:2em;
+}
+.banner .banner-top-text .sicn-up .sicn-input .button{
+    width:125px;    
+    background-color:#c7c2bc;
+    cursor:pointer;
+}
+
+/* 中间内容部分 */
+/* 第一部分开始 */
+.content-1{
+    height:570px;
+    text-align:center;
+    padding-top:90px;
+    z-index:999;
+}
+.content-1 .content-1-top{
+    margin-bottom:40px;
+}
+.content-1 .content-1-top .content-1-title{
+    font-size:14px;
+    color:#000;
+}
+.content-1 .content-1-top .content-1-con{
+    font-size:42px;
+    color:#000;
+}
+
+.content .content-1-wrapper .row{
+    width:100%;
+    height:100px;
+    margin-bottom:78px;
+    /* border:1px solid black; */
+}
+
+.content .content-1-wrapper .row .item{
+    float:left;
+    width:50%;
+    height:100%;
+    text-align:left;
+    /* border:1px solid orange; */
+}
+
+.content .content-1-wrapper .row .pic{
+    float:left;
+    margin-left:220px;
+}
+.content .content-1-wrapper .row .item:nth-child(2) .pic{
+    margin-left:90px;  
+}
+
+
+.content .content-1-wrapper .row1 .item:nth-child(1) .pic{
+    width:30px;
+    height:49px;;
+    background:url('../img/iphone.png') 0px 0px no-repeat;
+}
+.content .content-1-wrapper .row1 .item:nth-child(2) .pic{
+    width:40px;
+    height:37px;
+    background:url('../img/check.png') 0px 0px no-repeat;    
+}
+.content .content-1-wrapper .row2 .item:nth-child(1) .pic{
+    width:49px;
+    height:48px;;
+    background:url('../img/pencil.png') 0px 0px no-repeat;
+}
+.content .content-1-wrapper .row2 .item:nth-child(2) .pic{
+    width:50px;
+    height:42px;
+    background:url('../img/setting.png') 0px 0px no-repeat;    
+}
+
+.content .content-1-wrapper .row .text{
+    margin-left:280px;
+    font-size:20px;
+}
+.content .content-1-wrapper .row .text .text-title{
+    cursor:pointer;
+}
+.content .content-1-wrapper .row .item:nth-child(2) .text{
+    margin-left:150px;    
+}
+.content .content-1-wrapper .row .text .text-con{
+    color:#ccc;
+    font-size:16px;
+}
+/* 第一部分结束 */
+/* 第二部分开始 */
+.content-2{
+    position:relative;
+    width:100%;
+    height:800px;
+    background:url('../img/secbg.jpg') no-repeat;
+    background-size:100% 100%;
+}
+.content-2 .info{
+    position:absolute;
+    top:234px;
+    left:288px;
+    width:508px;
+    height:433px;
+}
+.content-2 .info .title{
+    font-size:42px;
+    margin-bottom:38px;
+    color:#fff;
+}
+.content-2 .info .text{
+    font-size:18px;
+}
+.content-2 .info .btn{
+    float:left;
+    width:240px;
+    height:60px;
+    font-size:12px;
+    color:#000;
+    text-align:center;
+    line-height:60px;
+    border:1px solid rgba(255,255,255,.4);  
+    border-radius:3px; 
+    margin-top:58px; 
+    cursor:pointer;
+}
+.content-2 .info .btn1{
+    background-color:#fff;
+}
+.content-2 .info .btn2{
+    margin-left:21px;
+    color:#fff;
+}
+.content-2 .pic-right{
+    position:absolute;
+    right:0;
+    top:100px;
+    width:646px;
+    height:597px;
+    border-top:1px solid rgba(255,255,255,.4);
+    border-left:1px solid rgba(255,255,255,.4);
+    border-bottom:1px solid rgba(255,255,255,.4);
+    border-radius:10px;
+}
+.content-2 .spot{
+    position:absolute;
+    left:27px;
+    top:292px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.4);
+    
+}
+.content-2 .pic-right img{
+    position:absolute;
+    right:0;
+    top:28px;
+}
+/* 第二部分结束 */
+/* 第三部分开始 */
+.content-3{
+    height:480px;
+    padding-top:100px;
+}
+.content-3 .title{
+    font-size:42px;
+    color:#000;
+    text-align:center;
+}
+.content-3 .message{
+    width:917px;
+    height:280px;
+    display:flex;  
+    margin:0 auto;
+    margin-top:84px;
+}
+.content-3 .message .info{
+    flex:1;
+    border:1px solid rgba(255,255,255,.4); 
+}
+.content-3 .message .info img{
+    margin:0 auto;
+    margin-bottom:38px;
+}
+.content-3 .message .info .text{
+    padding-left:28px;
+    text-align:center;
+    color:#ccc;
+    font-size:16px;
+}
+
+/* 第三部分结束 */
+.line{
+    border-bottom:1px solid rgba(0, 0, 0,.1);     
+    margin-bottom:114px;
+}
+/* 第四部分开始 */
+.content-4{
+
+}
+.content-4 .article-preview{
+    height:353px;
+    margin-bottom:80px;
+}
+.content-4 .article-preview >div{
+    float:left;
+}
+.content-4 .article-preview .img-section{    
+    width:57%;
+    height:349px;
+    position:relative;
+}
+.content-4 .article-preview .img-section img{
+    width:570px;
+    position:absolute;
+    right:0px;
+}
+.content-4 .article-preview .text-section{
+    width:43%;
+   
+}
+.content-4 .article-preview .text-section .text{
+    width:300px;
+    height:237px;
+    position: relative;
+    top: 78px;
+    left: 100px;
+    line-height:1.4em;
+}
+.content-4 .article-preview .text-section .text h4{
+    font-size:20px;
+    padding-bottom:38px;
+}
+.content-4 .article-preview .text-section .text p{
+    font-size:16px;
+}
+/* 第四部分结束 */
+/* 第五部分开始 */
+.content-5{
+    width:971px;
+    margin:0 auto;
+    text-align:center;
+    margin-bottom:100px;
+}
+.content-5 .text{
+    margin-bottom:66px;
+}
+.content-5 .text h4{
+    font-size:42px;
+}
+.content-5 .text p{
+    font-size:18px;
+    color:rgba(0,0,0,.5);
+    line-height:1.6em;
+    padding-left:138px;
+    padding-right:138px;
+}
+.content-5 .tutor-pic .row{
+    height:342px;
+    
+    display:flex;
+}
+.content-5 .tutor-pic .row .tutor{
+    flex:1;
+    position:relative;
+}
+.content-5 .tutor-pic .row:nth-child(1){
+    margin-bottom:30px;
+}
+.content-5 .tutor-pic .row .tutor:nth-child(2){
+    margin-left:30px;
+}
+.content-5 .tutor-pic .row .tutor img{
+    width:100%;
+    height:100%;
+}
+
+.content-5  .hov-shade{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.3);    
+    color:#ccc;
+    /* display:none; */
+    opacity:0;
+    transition:0.5s;
+}
+.content-5 .tutor:hover .hov-shade{
+    /* display:block; */
+    opacity:1;
+}
+.content-5  .hov-shade .text{
+    position:absolute;
+    top:124px;
+    left:32px;
+
+}
+.content-5  .hov-shade .text h4{
+    font-size:20px;
+}
+.content-5  .hov-shade .text p{
+    font-size:12px;
+}
+.content-5  .hov-shade .share .tool{
+    position:relative;
+    float:left;
+    width:50px;
+    height:56px;
+    margin-right:30px;
+    border:1px solid rgba(255,255,255,.4); 
+    border-radius:50%;   
+    cursor:pointer;
+}
+.content-5  .hov-shade .share{
+    position:absolute;
+    top:196px;
+    left:129px;
+}
+.content-5  .hov-shade .share .tool img{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.content-5  .hov-shade .share .tool .facebook{
+
+    width:8px;
+    height:19px;
+}
+.content-5  .hov-shade .share .tool .twitter{
+    width:19px;
+    height:16px;
+}
+.content-5  .hov-shade .share .tool .instagram{
+    width:21px;
+    height:21px;
+}
+/* 第五部分结束 */
+/* 第六部分开始 */
+.content-6{
+    position:relative;
+    height:702px;
+}
+.content-6 .send{
+    position:absolute;
+    left:100px;
+    width:470px;
+    height:560px;
+    border:1px solid rgba(0, 0, 0,.1);
+    border-radius:6px;   
+}
+.content-6 .send h4{
+    font-size:16px;
+    text-align:center;
+    margin:50px 0;
+}
+.content-6 .send input{
+    display:block;
+    margin:0 auto;
+    border:1px solid rgba(0,0,0,.1);  
+    border-radius:6px;       
+    width:372px;
+    height:50px; 
+    margin-bottom:30px; 
+    text-indent:2em;
+    font-size:14px;     
+    color:#ccc;        
+}
+.content-6 .send textarea{
+    display:block;
+    margin:0 auto;
+    font-size:14px;   
+    text-align:left;
+    color:#ccc; 
+    padding-top:10px;
+    border:1px solid rgba(0,0,0,.1);  
+    border-radius:6px;       
+}
+.content-6 .send .send-btn{
+    width:370px;
+    height:50px;
+    font-size:16px;
+    color:#fff;
+    background:#141414;
+    border-radius:6px;       
+    margin:30px auto;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+}
+
+.content-6 .contacts{
+    position:absolute;
+    left:600px;
+    width:370px;
+    height:560px;
+    padding-left:100px;
+}
+.content-6 .contacts h4{
+    font-size:42px;
+    padding-top:85px;
+    padding-bottom:28px;
+}
+.content-6 .contacts p{
+    font-size:16px;
+    line-height:24px;
+}
+.content-6 .contacts .mode p{
+    color:#000;
+    padding-left:38px;
+}
+.content-6 .contacts .mode a{
+    color:#000;
+}
+.content-6 .contacts .mode{
+    margin-bottom:34px;
+}
+.content-6 .contacts .pic{
+    float:left;
+}
+.content-6 .contacts .map{
+    margin-top:70px;
+}
+.content-6 .contacts .map .pic{
+    width:24px;
+    height:25px;
+    background:url(../img/icon-1.png) 0px 0px no-repeat;
+}
+.content-6 .contacts .iphone .pic{
+    width:24px;
+    height:25px;
+    background:url(../img/icon-1.png) 0px -24px no-repeat;
+}
+.content-6 .contacts .mail .pic{
+    width:24px;
+    height:25px;
+    background:url(../img/icon-1.png) 0px -49px no-repeat;
+}
+/* 第六部分结束 */
+
+
+/* 脚部 */
+.footer{
+    height:408px;
+    background:#141414;
+}
+.footer .footer-col{
+    float:left;
+    margin-top:86px;
+    margin-right:136px;
+    line-height:54px;
+}
+.footer .footer-col{
+    color:#6c6c6c;
+}
+.footer .footer-col span{
+    color:#fff;
+}
+.footer .last-col ul{
+    margin-top:38px;
+}
+.footer .last-col ul li{
+    float: left;
+    width:17px;
+    height:22px;
+    margin-right:25px;
+    cursor:pointer;
+}
+.footer .last-col ul li:nth-child(1){
+    background:url('../img/twitter-icon.png') no-repeat;
+}
+.footer .last-col ul li:nth-child(2){
+    background:url('../img/facebook-icon.png') no-repeat;
+}
+.footer .last-col ul li:nth-child(3){
+    background:url('../img/google-icon.png') no-repeat;
+}
+.footer .last-col ul li:nth-child(4){
+    background:url('../img/tumbler-icon.png') no-repeat;
+}
+.footer .last-col ul li:nth-child(5){
+    background:url('../img/pinterest-icon.png') no-repeat;
+}
+.footer .last-col ul li:nth-child(6){
+    background:url('../img/linkedin-icon.png') no-repeat;
+}
